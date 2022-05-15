@@ -123,7 +123,7 @@ export default function Country() {
                           <Link
                             className="detail__border"
                             key={border}
-                            to={`/country/${names[border]}`}
+                            to={`/country/${names[border].replace(' ', '%20')}`}
                           >
                             {names[border]}
                           </Link>

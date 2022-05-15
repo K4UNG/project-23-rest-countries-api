@@ -102,6 +102,7 @@ export default function Home() {
         </div>
         
         <select
+          aria-label="filter by region"
           className="filter"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
