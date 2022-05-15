@@ -120,6 +120,7 @@ button {
 
 .search {
   width: 100%;
+  padding-left: 5rem;
 }
 
 .search::placeholder {
@@ -320,7 +321,7 @@ button {
 
   .detail__borders {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .detail__borders--wrapper {

@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 export default function Header() {
   function changeMode() {
     document.body.classList.toggle("dark");
+    if (document.body.classList.contains('dark'))
+      localStorage.setItem('theme', 'dark')
+    else
+      localStorage.setItem('theme', 'light')
   }
   return (
     <header className="header">
