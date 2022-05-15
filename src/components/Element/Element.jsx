@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Element({ name, population, region, capital, image }) {
   return (
-    <Link to={`/country/${name.replace(' ', '%20')}`} className="element">
+    <Link to={`/country/${name.replace(/\s/g, '%20')}`} className="element">
       <div className="element__img">
         <img src={image} alt={name} />
       </div>
