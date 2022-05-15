@@ -125,7 +125,6 @@ button {
 
 .search::placeholder {
   color: var(--input);
-  text-align: center;
 }
 
 /* --element-- */
